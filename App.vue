@@ -20,7 +20,7 @@
 	}
 </script>
 
-<style>
+<style lang="less">
 	/*每个页面公共css */
 	@import url("./static/fonts/iconfont.css");
 	/* 主题颜色 */
@@ -66,5 +66,37 @@
 		border-radius:6rpx;
 		background-color: #6b4cd6;
 		margin-right: 12rpx;
+	}
+	.tit {
+		font-size: 30rpx;
+		color: #222;
+		font-weight: 700;
+	}
+	
+	/* 用户头像 */
+	.avatar {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		margin-top: 12rpx;
+		background-color: #eee9ef;
+		// background-color: #fff;
+		.iconfont {
+			position: absolute;
+			color: #fff;
+			font-weight: 700;
+			font-size: 13px;
+		}
+		.day {
+			position: absolute;
+			right: -40%;
+			bottom: -10rpx;
+			// swidth: 50px;
+			background-color: #fc3530;
+			color: #fff;
+			font-size: 10rpx;
+			padding: 0px 4rpx;
+		}
 	}
 </style>

@@ -16,9 +16,9 @@
 		<!-- 左边滑条 -->
 		<view class="slide" @touchstart="handleShowInfo"></view>
 		<!-- 弹出层 -->
-		<uni-drawer mode="left" ref="popUp">
+		<uni-drawer mode="left" ref="popUp" :width="260">
 		    <view style="padding:30rpx;">
-		        <view class="uni-title">抽屉式导航</view>
+		        <Userinfo></Userinfo>
 		    </view>
 		</uni-drawer>
 	</view>
@@ -27,8 +27,9 @@
 <script>
 	import cmdProgress from "@/components/cmd-progress/cmd-progress.vue";
 	import uniDrawer from "@/components/uni-drawer/uni-drawer.vue";
+	import Userinfo from '@/components/UserInfo.vue'
 	export default {
-		components:{cmdProgress,uniDrawer},
+		components:{cmdProgress,uniDrawer,Userinfo},
 		props:['currenNav'],
 		data() {
 			return {
@@ -71,33 +72,6 @@
 		width: 100%;
 		height: 180rpx;
 		padding: 60rpx 26rpx 0;
-		// background-color: red;
-		.avatar {
-			position: relative;
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			margin-top: 12rpx;
-			background-color: #eee9ef;
-			// background-color: #fff;
-			.iconfont {
-				position: absolute;
-				color: #fff;
-				font-weight: 700;
-				font-size: 13px;
-			}
-			.day {
-				position: absolute;
-				right: -40%;
-				bottom: -10rpx;
-				// swidth: 50px;
-				background-color: #fc3530;
-				color: #fff;
-				font-size: 10rpx;
-				padding: 0px 4rpx;
-			}
-		}
-		
 		.nav {
 			width: 400rpx;
 			font-size: 30rpx;
