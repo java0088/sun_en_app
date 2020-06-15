@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "header": "/components/Header",
+    "context": "/pages/context/context",
+    "community": "/pages/community/community",
+    "find": "/pages/find/find"
+  }
+}

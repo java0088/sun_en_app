@@ -1,0 +1,76 @@
+.tabbar.data-v-40fa0a48 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140rpx;
+  padding: 0 26rpx 30rpx;
+}
+.user_box.data-v-40fa0a48 {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+}
+.user_box .icon.data-v-40fa0a48 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.user_box .add.data-v-40fa0a48 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+  background-color: #e6442b;
+}
+.user_box .add .icon-add.data-v-40fa0a48 {
+  font-size: 12rpx;
+}
+.camera.data-v-40fa0a48 {
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.camera image.data-v-40fa0a48 {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  left: 30rpx;
+  top: 20rpx;
+}
+.camera .icon-bofang.data-v-40fa0a48 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-60%, -30%) rotate(180deg);
+          transform: translate(-60%, -30%) rotate(180deg);
+  font-size: 16rpx;
+}
+.share.data-v-40fa0a48 {
+  width: 55%;
+}
+.share .item.data-v-40fa0a48 {
+  position: relative;
+  width: 20%;
+  height: 46rpx;
+}
+.share .active .iconfont.data-v-40fa0a48 {
+  color: #fc3530;
+}
+.share .iconfont.data-v-40fa0a48 {
+  font-size: 55rpx;
+  color: #fff;
+}
+.share .num.data-v-40fa0a48 {
+  position: absolute;
+  font-size: 16rpx;
+  bottom: -28rpx;
+  left: 50%;
+}
+

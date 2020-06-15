@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header": "/components/Header",
+    "tabbar": "/components/Tabbar",
+    "side-nav": "/components/SideNav"
+  }
+}

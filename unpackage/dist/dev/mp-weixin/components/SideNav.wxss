@@ -1,0 +1,29 @@
+.side_nav.data-v-782cbabe {
+  position: absolute;
+  width: 80rpx;
+  height: 360rpx;
+  bottom: 170rpx;
+  right: 26rpx;
+}
+.side_nav .item.data-v-782cbabe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 120rpx;
+}
+.side_nav .item .iconfont.data-v-782cbabe {
+  font-size: 42rpx;
+  font-weight: 700;
+}
+.side_nav .item view.data-v-782cbabe {
+  font-size: 26rpx;
+}
+

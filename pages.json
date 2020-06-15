@@ -1,0 +1,20 @@
+{
+	"pages": [
+		{"path": "pages/home/home","style":{
+			"enablePullDownRefresh":true,
+			"app-plus":{
+				"pullToRefresh":{
+					"offset":"90rpx",
+					"color":"#f95d2a"
+				}
+			}
+		}},
+		{"path": "pages/index/index"}, 
+		{"path": "pages/find/find"},
+		{"path": "pages/community/community"}, 
+		{"path": "pages/context/context"}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	}
+}
