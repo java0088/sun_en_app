@@ -419,51 +419,6 @@
 }
 
 
-
-
-
-// find页面的公共样式
-.v_item {
-	position: relative;
-	width: 31%;
-	height: 260rpx;
-	border-radius: 12rpx;
-	overflow: hidden;
-	margin-bottom: 20rpx;
-	.item_src {
-		width: 100%;
-		height: 100%;
-	}
-	.play_btn {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%,-50%);
-		width: 50rpx;
-		height: 50rpx;
-		border-radius: 50%;
-		background-color: rgba(0,0,0,0.3);
-		.iconfont {
-			font-size: 20rpx;
-			color: #fff;
-		}
-	}
-	.love {
-		position: absolute;
-		bottom: 12rpx;
-		left: 12rpx;
-		color: #fff;
-		.iconfont {
-			font-size: 28rpx;
-		}
-		.num {
-			font-size: 22rpx;
-			margin-left: 8rpx;
-			font-weight: normal;
-		}
-	}
-}
-
 .o_item {
 	width: 64%;
 	height: 160rpx;

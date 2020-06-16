@@ -10,13 +10,13 @@
 				{{item.title}}
 			</view>
 		</view>
-		<view class="search">
+		<view class="search" @click="handleSearchClick">
 			<text class="iconfont icon-search1"></text>
 		</view>
 		<!-- 左边滑条 -->
 		<view class="slide" @touchstart="handleShowInfo"></view>
 		<!-- 弹出层 -->
-		<uni-drawer mode="left" ref="popUp" :width="260">
+		<uni-drawer mode="left" ref="popUp" :width="280">
 		    <view style="padding:30rpx;">
 		        <Userinfo></Userinfo>
 		    </view>
@@ -48,6 +48,12 @@
 			},
 			handleShowInfo() {
 				this.$refs.popUp.open()
+			},
+			handleSearchClick() {
+				console.log('search')
+				uni.navigateTo({
+					url:'/pages/search/search'
+				})
 			}
 		}
 	}

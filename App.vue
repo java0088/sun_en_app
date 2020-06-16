@@ -24,7 +24,7 @@
 	/*每个页面公共css */
 	@import url("./static/fonts/iconfont.css");
 	/* 主题颜色 */
-	view,text,image{
+	view,text,image,input{
 		box-sizing: border-box;
 	}
 	.color_fff {
@@ -39,6 +39,9 @@
 	}
 	.gray_color {
 		color: #969599;
+	}
+	.yellow_color {
+		color: #febe1e;
 	}
 	/* flex布局 */
 	.flex_between {
@@ -98,5 +101,89 @@
 			font-size: 10rpx;
 			padding: 0px 4rpx;
 		}
+	}
+	// 分类公共样式
+	.cate_box {
+		display: flex;
+		font-size: 28rpx;
+		background-color: #fff;
+		.cate_item {
+			position: relative;
+			padding: 30rpx;
+			color: #94959a;
+			font-weight: 700;
+			&::after {
+				position: absolute;
+				content: '';
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+				width: 2rpx;
+				height: 26rpx;
+				border-radius: 2rpx;
+				background-color: #d6d7d9;
+			}
+			
+		}
+		.cate_item:nth-child(3) {
+			&::after {
+				background-color: rgba(0,0,0,0);
+			}
+		}
+		.active {
+			color: #222;
+		}
+	}
+	// find页面的公共样式
+	.v_item {
+		position: relative;
+		width: 31%;
+		height: 260rpx;
+		border-radius: 12rpx;
+		overflow: hidden;
+		margin-bottom: 20rpx;
+		.item_src {
+			width: 100%;
+			height: 100%;
+		}
+		.play_btn {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			width: 50rpx;
+			height: 50rpx;
+			border-radius: 50%;
+			background-color: rgba(0,0,0,0.3);
+			.iconfont {
+				font-size: 20rpx;
+				color: #fff;
+			}
+		}
+		.love {
+			position: absolute;
+			bottom: 12rpx;
+			left: 12rpx;
+			color: #fff;
+			.iconfont {
+				font-size: 28rpx;
+			}
+			.num {
+				font-size: 22rpx;
+				margin-left: 8rpx;
+				font-weight: normal;
+			}
+		}
+	}
+	// 新标签
+	.new_tag {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-radius: 50% 0 50% 0;
+		background-color: #da4a27;
+		color: #fff;
+		padding: 3rpx 8rpx;
+		font-size: 22rpx;
 	}
 </style>

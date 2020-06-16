@@ -4,16 +4,32 @@
 			"enablePullDownRefresh":true,
 			"app-plus":{
 				"pullToRefresh":{
-					"offset":"90rpx",
+					"offset":"130rpx",
 					"color":"#f95d2a"
 				}
 			}
 		}},
 		{"path": "pages/index/index"}, 
 		{"path": "pages/find/find"},
-		{"path": "pages/community/community"}, 
+		{"path": "pages/community/community",
+		"style":{
+				"pullToRefresh":{
+					"offset":"120rpx",
+					"color":"#f95d2a"
+				}
+			}
+		}, 
 		{"path": "pages/context/context"}
-	],
+	    ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"app-plus": {
+				        "animationType": "fade-in",
+				        "animationDuration": 300
+				    }
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationStyle": "custom"
 	}

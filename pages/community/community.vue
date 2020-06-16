@@ -1,41 +1,83 @@
 <template>
 	<view class="community">
-		社区
+		<!-- 分类 -->
+		<view class="nav_cate cate_box">
+			<view class="cate_item" :class="index===currentCate?'active':''" v-for="(item,index) in cates" :key="item.id" @tap="handleCateClick(index)">{{item.title}}</view>
+		</view>
+		
+		<!-- 轮播切换 -->
+		<view class="swiper_box">
+			 <swiper class="swiper" :current="currentCate" @change="handleChange">
+			  <swiper-item>
+			       <Attention :lovelist="loveList" :attentionData="attentionData"></Attention>
+			      </swiper-item>
+			      <swiper-item>
+			          <WorkArea></WorkArea>
+			      </swiper-item>
+			      <swiper-item>
+			          <TallyBook></TallyBook>
+			      </swiper-item>
+			  </swiper>                    
+		</view>
 	</view>
 </template>
 
 <script>
+	import Attention from '@/components/Attention.vue'
+	import WorkArea from '@/components/WorkArea.vue'
+	import TallyBook from '@/components/TallyBook.vue'
 	export default {
+		components:{
+			Attention,
+			WorkArea,
+			TallyBook
+		},
 		onLoad() {console.log('community--onLoad')},
 		onShow() {console.log('community--onShow')},
 		onHide() {console.log('community--onHide')},
 		data() {
 			return {
-				downOption:{},
-				upOption:{}
+				cates:[
+					{id:1,title:'关注',opt:''},
+					{id:2,title:'作品区',opt:''},
+					{id:3,title:'记录本',opt:''},
+				],
+				loveList:[{id:123}],
+				attentionData:'关注',
+				currentCate:0
 			}
 		},
 		methods: {
-			mescrollInit(e) {
-				// console.log(e)
+			// 点击切换
+			handleCateClick(index) {
+				this.currentCate = index
 			},
-			downCallback(e) {
+			// 滑动轮播
+			handleChange(e) {
 				// console.log(e)
-			},
-			upCallback(e) {
-				// console.log(e)
-				console.log(e)
-				e.num++
-			},
+				this. currentCate = e.detail.current
+			}
 		}
 	}
 </script>
 
 <style lang="less" scoped>
 .community {
-	width: 750rpx;
-	height: 100vh;
-	background-color: #f05a18;
 	padding-top: 180rpx;
+}
+.nav_cate {
+	padding-left: 30rpx;
+	.cate_item {
+		font-size: 30rpx;
+	}
+}
+.swiper_box {
+	width: 100%;
+	height: 100vh;
+	background-color: #f9f9f9;
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
 }
 </style>
