@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "cmd-progress": "/components/cmd-progress/cmd-progress",
-    "uni-drawer": "/components/uni-drawer/uni-drawer"
+    "uni-drawer": "/components/uni-drawer/uni-drawer",
+    "userinfo": "/components/UserInfo"
   }
 }

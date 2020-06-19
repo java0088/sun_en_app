@@ -1,8 +1,8 @@
 <template>
 	<view class="userinfo">
-		<view class="top">
+		<view class="top" @click="handleChange">
 			<view class="avatar flex_center">
-				<cmd-progress stroke-color="#fc3530" :show-info="false" :width="42" type="circle" :percent="75"></cmd-progress>
+				<!-- <cmd-progress stroke-color="#fc3530" :show-info="false" :width="42" type="circle" :percent="75"></cmd-progress> -->
 				<text class="iconfont icon-user"></text>
 				<view class="day">第3天</view>
 			</view>
@@ -77,7 +77,15 @@
 				tingli:12345,
 				kouyu:12458,
 			};
-		}
+		},
+		methods:{
+			handleChange() {
+				uni.navigateTo({
+					url:'/pages/profile/profile'
+				})
+				console.log('yes')
+			}
+		} 
 	}
 </script>
 
@@ -168,6 +176,7 @@
 	left: 0;
 	width: 100%;
 	height: 200rpx;
+	background-color: #fff;
 	// background-color: red;
 	.set_item {
 		flex-direction: column;

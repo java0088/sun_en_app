@@ -79,8 +79,8 @@
 	/* 用户头像 */
 	.avatar {
 		position: relative;
-		width: 40px;
-		height: 40px;
+		width: 84rpx;
+		height: 84rpx;
 		border-radius: 50%;
 		margin-top: 12rpx;
 		background-color: #eee9ef;
@@ -89,17 +89,20 @@
 			position: absolute;
 			color: #fff;
 			font-weight: 700;
-			font-size: 13px;
+			font-size: 40rpx;
 		}
 		.day {
 			position: absolute;
-			right: -40%;
-			bottom: -10rpx;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%,80%);
 			// swidth: 50px;
 			background-color: #fc3530;
 			color: #fff;
 			font-size: 10rpx;
-			padding: 0px 4rpx;
+			min-width: 100rpx;
+			text-align: center;
+			padding: 0px 2px;
 		}
 	}
 	// 分类公共样式

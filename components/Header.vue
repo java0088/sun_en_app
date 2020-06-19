@@ -1,7 +1,6 @@
 <template>
 	<view class="header flex_between" :class="currenNav===1?'color_fff':'bg_color'">
 		<view class="avatar flex_center" @click="handleShowInfo">
-			<cmd-progress stroke-color="#fc3530" :show-info="false" :width="42" type="circle" :percent="75"></cmd-progress>
 			<text class="iconfont icon-user"></text>
 			<view class="day">第3天</view>
 		</view>
@@ -16,7 +15,7 @@
 		<!-- 左边滑条 -->
 		<view class="slide" @touchstart="handleShowInfo"></view>
 		<!-- 弹出层 -->
-		<uni-drawer mode="left" ref="popUp" :width="280">
+		<uni-drawer mode="left" ref="popUp" :width="500">
 		    <view style="padding:30rpx;">
 		        <Userinfo></Userinfo>
 		    </view>
@@ -75,7 +74,7 @@
 		z-index: 999;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 750rpx;
 		height: 180rpx;
 		padding: 60rpx 26rpx 0;
 		.nav {

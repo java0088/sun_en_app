@@ -1,0 +1,56 @@
+.tally_book.data-v-752529e7 {
+  width: 100%;
+}
+.tally_book .list.data-v-752529e7 {
+  width: 100%;
+}
+.item.data-v-752529e7 {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+.item .top.data-v-752529e7 {
+  height: 100rpx;
+}
+.item .top .icon.data-v-752529e7 {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.item .top .tit.data-v-752529e7 {
+  margin: 0 20rpx;
+}
+.item .top .nic.data-v-752529e7 {
+  font-size: 32rpx;
+  color: #ffdb7c;
+  font-weight: 700;
+}
+.item .goal.data-v-752529e7 {
+  margin: 16rpx 0;
+}
+.item .play_list.data-v-752529e7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 150%;
+  background-color: #fff;
+}
+.item .play_list .v_item.data-v-752529e7 {
+  width: 160rpx;
+  height: 220rpx;
+  margin-right: 20rpx;
+}
+.item .plays_scroll.data-v-752529e7 {
+  width: 750rpx;
+  background-color: #fff;
+}
+.item .kouyu.data-v-752529e7 {
+  font-size: 26rpx;
+  color: #acabb2;
+  margin-right: 20rpx;
+}
+.book_scroll.data-v-752529e7 {
+  height: 1100rpx;
+}
+

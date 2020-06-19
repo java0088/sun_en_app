@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -159,7 +159,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 var _context = _interopRequireDefault(__webpack_require__(/*! @/pages/context/context.vue */ 17));
 var _community = _interopRequireDefault(__webpack_require__(/*! @/pages/community/community.vue */ 24));
-var _find = _interopRequireDefault(__webpack_require__(/*! @/pages/find/find.vue */ 31));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var Header = function Header() {__webpack_require__.e(/*! require.ensure | components/Header */ "components/Header").then((function () {return resolve(__webpack_require__(/*! @/components/Header.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _find = _interopRequireDefault(__webpack_require__(/*! @/pages/find/find.vue */ 31));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var Header = function Header() {__webpack_require__.e(/*! require.ensure | components/Header */ "components/Header").then((function () {return resolve(__webpack_require__(/*! @/components/Header.vue */ 67));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   components: { Header: Header, Context: _context.default, Community: _community.default, Find: _find.default },
   onLoad: function onLoad() {console.log('home--onLoad');},
@@ -176,7 +176,15 @@ var _find = _interopRequireDefault(__webpack_require__(/*! @/pages/find/find.vue
     },
     change: function change(index) {
       this.currentPage = index;
-    } } };exports.default = _default;
+    } },
+
+  onPullDownRefresh: function onPullDownRefresh() {
+    setTimeout(function () {
+      uni.stopPullDownRefresh();
+
+    }, 1000);
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */
@@ -289,7 +297,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _onLoad$onShow$onHide;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Header = function Header() {__webpack_require__.e(/*! require.ensure | components/Header */ "components/Header").then((function () {return resolve(__webpack_require__(/*! @/components/Header.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Tabbar = function Tabbar() {__webpack_require__.e(/*! require.ensure | components/Tabbar */ "components/Tabbar").then((function () {return resolve(__webpack_require__(/*! @/components/Tabbar.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var SideNav = function SideNav() {__webpack_require__.e(/*! require.ensure | components/SideNav */ "components/SideNav").then((function () {return resolve(__webpack_require__(/*! @/components/SideNav.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = (_onLoad$onShow$onHide = {
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _onLoad$onShow$onHide;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Header = function Header() {__webpack_require__.e(/*! require.ensure | components/Header */ "components/Header").then((function () {return resolve(__webpack_require__(/*! @/components/Header.vue */ 67));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Tabbar = function Tabbar() {__webpack_require__.e(/*! require.ensure | components/Tabbar */ "components/Tabbar").then((function () {return resolve(__webpack_require__(/*! @/components/Tabbar.vue */ 74));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var SideNav = function SideNav() {__webpack_require__.e(/*! require.ensure | components/SideNav */ "components/SideNav").then((function () {return resolve(__webpack_require__(/*! @/components/SideNav.vue */ 81));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = (_onLoad$onShow$onHide = {
 
 
 
@@ -545,23 +553,65 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Attention = function Attention() {__webpack_require__.e(/*! require.ensure | components/Attention */ "components/Attention").then((function () {return resolve(__webpack_require__(/*! @/components/Attention.vue */ 88));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var WorkArea = function WorkArea() {__webpack_require__.e(/*! require.ensure | components/WorkArea */ "components/WorkArea").then((function () {return resolve(__webpack_require__(/*! @/components/WorkArea.vue */ 95));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var TallyBook = function TallyBook() {__webpack_require__.e(/*! require.ensure | components/TallyBook */ "components/TallyBook").then((function () {return resolve(__webpack_require__(/*! @/components/TallyBook.vue */ 102));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    Attention: Attention,
+    WorkArea: WorkArea,
+    TallyBook: TallyBook },
+
   onLoad: function onLoad() {console.log('community--onLoad');},
   onShow: function onShow() {console.log('community--onShow');},
   onHide: function onHide() {console.log('community--onHide');},
   data: function data() {
-    return {};
+    return {
+      cates: [
+      { id: 1, title: '关注', opt: '' },
+      { id: 2, title: '作品区', opt: '' },
+      { id: 3, title: '记录本', opt: '' }],
 
+      loveList: [{ id: 123 }],
+      attentionData: '关注',
+      currentCate: 0 };
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    // 点击切换
+    handleCateClick: function handleCateClick(index) {
+      this.currentCate = index;
+    },
+    // 滑动轮播
+    handleChange: function handleChange(e) {
+      // console.log(e)
+      this.currentCate = e.detail.current;
+    } } };exports.default = _default;
 
 /***/ }),
 /* 29 */

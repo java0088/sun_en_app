@@ -17,29 +17,6 @@
   height: 180rpx;
   padding: 60rpx 26rpx 0;
 }
-.header .avatar.data-v-743bd4ea {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-top: 12rpx;
-  background-color: #eee9ef;
-}
-.header .avatar .iconfont.data-v-743bd4ea {
-  position: absolute;
-  color: #fff;
-  font-weight: 700;
-  font-size: 13px;
-}
-.header .avatar .day.data-v-743bd4ea {
-  position: absolute;
-  right: -40%;
-  bottom: -10rpx;
-  background-color: #fc3530;
-  color: #fff;
-  font-size: 10rpx;
-  padding: 0px 4rpx;
-}
 .header .nav.data-v-743bd4ea {
   width: 400rpx;
   font-size: 30rpx;

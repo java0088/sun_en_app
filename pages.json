@@ -29,6 +29,14 @@
 				    }
 			}
         }
+        ,{
+            "path" : "pages/profile/profile",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/film/film",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationStyle": "custom"

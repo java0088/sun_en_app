@@ -12,10 +12,10 @@
 				<text class="num">{{item.num}}</text>
 			</view >
 		</view>
-		<div class="camera">
-			<image src="../static/imgs/camera.png"></image>
+		<view class="camera" @tap="goPage('/pages/film/film')">
+			<image src="../static/imgs/camera4.png"></image>
 			<text class="iconfont icon-bofang"></text>
-		</div>
+		</view>
 	</view>
 </template>
 
@@ -95,14 +95,15 @@
 		position: absolute;
 		width: 70rpx;
 		height: 70rpx;
-		left: 30rpx;
-		top: 20rpx;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
 	}
 	.icon-bofang {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-60%,-30%) rotate(180deg);
+		transform: translate(-80%,-50%) rotate(180deg);
 		font-size: 16rpx;
 	}
 }

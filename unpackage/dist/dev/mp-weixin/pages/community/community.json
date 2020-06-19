@@ -1,3 +1,11 @@
 {
-  "usingComponents": {}
+  "pullToRefresh": {
+    "offset": "120rpx",
+    "color": "#f95d2a"
+  },
+  "usingComponents": {
+    "attention": "/components/Attention",
+    "work-area": "/components/WorkArea",
+    "tally-book": "/components/TallyBook"
+  }
 }

@@ -4,7 +4,8 @@
 		<view class="nav_cate cate_box">
 			<view class="cate_item" :class="index===currentCate?'active':''" v-for="(item,index) in cates" :key="item.id" @tap="handleCateClick(index)">{{item.title}}</view>
 		</view>
-		
+		<!-- 拍视频按钮 -->
+		<Player></Player>
 		<!-- 轮播切换 -->
 		<view class="swiper_box">
 			 <swiper class="swiper" :current="currentCate" @change="handleChange">
@@ -26,11 +27,13 @@
 	import Attention from '@/components/Attention.vue'
 	import WorkArea from '@/components/WorkArea.vue'
 	import TallyBook from '@/components/TallyBook.vue'
+	import Player from '@/components/Player.vue'
 	export default {
 		components:{
 			Attention,
 			WorkArea,
-			TallyBook
+			TallyBook,
+			Player
 		},
 		onLoad() {console.log('community--onLoad')},
 		onShow() {console.log('community--onShow')},

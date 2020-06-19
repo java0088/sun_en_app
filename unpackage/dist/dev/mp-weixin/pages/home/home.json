@@ -1,4 +1,5 @@
 {
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "header": "/components/Header",
     "context": "/pages/context/context",

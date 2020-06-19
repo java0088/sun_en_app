@@ -4,12 +4,14 @@
     "pages/index/index",
     "pages/find/find",
     "pages/community/community",
-    "pages/context/context"
+    "pages/context/context",
+    "pages/search/search",
+    "pages/profile/profile"
   ],
   "subPackages": [],
   "window": {
     "navigationStyle": "custom"
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap91.json"
+  "sitemapLocation": "sitemap67.json"
 }

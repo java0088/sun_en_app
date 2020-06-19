@@ -177,47 +177,6 @@
 .owner_new .work .first .bold.data-v-15d6b1c9 {
   margin: 16rpx 0;
 }
-.v_item.data-v-15d6b1c9 {
-  position: relative;
-  width: 31%;
-  height: 260rpx;
-  border-radius: 12rpx;
-  overflow: hidden;
-  margin-bottom: 20rpx;
-}
-.v_item .item_src.data-v-15d6b1c9 {
-  width: 100%;
-  height: 100%;
-}
-.v_item .play_btn.data-v-15d6b1c9 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 50rpx;
-  height: 50rpx;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.v_item .play_btn .iconfont.data-v-15d6b1c9 {
-  font-size: 20rpx;
-  color: #fff;
-}
-.v_item .love.data-v-15d6b1c9 {
-  position: absolute;
-  bottom: 12rpx;
-  left: 12rpx;
-  color: #fff;
-}
-.v_item .love .iconfont.data-v-15d6b1c9 {
-  font-size: 28rpx;
-}
-.v_item .love .num.data-v-15d6b1c9 {
-  font-size: 22rpx;
-  margin-left: 8rpx;
-  font-weight: normal;
-}
 .o_item.data-v-15d6b1c9 {
   width: 64%;
   height: 160rpx;

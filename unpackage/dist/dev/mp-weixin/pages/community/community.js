@@ -114,23 +114,65 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var Attention = function Attention() {__webpack_require__.e(/*! require.ensure | components/Attention */ "components/Attention").then((function () {return resolve(__webpack_require__(/*! @/components/Attention.vue */ 88));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var WorkArea = function WorkArea() {__webpack_require__.e(/*! require.ensure | components/WorkArea */ "components/WorkArea").then((function () {return resolve(__webpack_require__(/*! @/components/WorkArea.vue */ 95));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var TallyBook = function TallyBook() {__webpack_require__.e(/*! require.ensure | components/TallyBook */ "components/TallyBook").then((function () {return resolve(__webpack_require__(/*! @/components/TallyBook.vue */ 102));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    Attention: Attention,
+    WorkArea: WorkArea,
+    TallyBook: TallyBook },
+
   onLoad: function onLoad() {console.log('community--onLoad');},
   onShow: function onShow() {console.log('community--onShow');},
   onHide: function onHide() {console.log('community--onHide');},
   data: function data() {
-    return {};
+    return {
+      cates: [
+      { id: 1, title: '关注', opt: '' },
+      { id: 2, title: '作品区', opt: '' },
+      { id: 3, title: '记录本', opt: '' }],
 
+      loveList: [{ id: 123 }],
+      attentionData: '关注',
+      currentCate: 0 };
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    // 点击切换
+    handleCateClick: function handleCateClick(index) {
+      this.currentCate = index;
+    },
+    // 滑动轮播
+    handleChange: function handleChange(e) {
+      // console.log(e)
+      this.currentCate = e.detail.current;
+    } } };exports.default = _default;
 
 /***/ }),
 
